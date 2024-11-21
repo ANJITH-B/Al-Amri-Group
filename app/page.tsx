@@ -9,7 +9,7 @@ const page = () => {
       <div className="fixed right-8 top-1/2 hidden -translate-y-1/2 transform md:flex xl:right-24 2xl:right-28 z-50">
         <SocialLinks />
       </div>
-      <div className="fixed bottom-8 left-1/2 -translate-x-1/2 transform md:hidden z-50">
+      <div className="fixed bottom-4 left-1/2 -translate-x-1/2 transform md:hidden z-50">
         <SocialLinks />
       </div>
     </div>

@@ -4,7 +4,7 @@ import React from "react";
 const SocialLinks = () => {
   return (
     <div className="relative flex md:flex-col gap-5 w-full justify-center items-center">
-      <div className="relative bg-[rgba(114,109,109,0.35)] backdrop-blur-lg hover:bg-stone-600 rounded-full w-12 h-12 md:w-14 md:h-14 flex justify-center items-center">
+      <div className="relative bg-[rgba(114,109,109,0.35)] backdrop-blur-lg hover:bg-stone-600 rounded-full w-10 h-10 md:w-14 md:h-14 flex justify-center items-center">
         <Link href="#">
           <span className="sr-only">Instagram</span>
           <svg
@@ -25,7 +25,7 @@ const SocialLinks = () => {
           </svg>
         </Link>
       </div>
-      <div className="relative bg-[rgba(114,109,109,0.35)] backdrop-blur-lg hover:bg-stone-600 rounded-full w-12 h-12 md:w-14 md:h-14 flex justify-center items-center">
+      <div className="relative bg-[rgba(114,109,109,0.35)] backdrop-blur-lg hover:bg-stone-600 rounded-full w-10 h-10 md:w-14 md:h-14 flex justify-center items-center">
         <Link href="#">
           <span className="sr-only">Facebook</span>
           <svg
@@ -45,7 +45,7 @@ const SocialLinks = () => {
           </svg>
         </Link>
       </div>
-      <div className="relative bg-[rgba(114,109,109,0.35)] backdrop-blur-lg hover:bg-stone-600 rounded-full w-12 h-12 md:w-14 md:h-14 flex justify-center items-center">
+      <div className="relative bg-[rgba(114,109,109,0.35)] backdrop-blur-lg hover:bg-stone-600 rounded-full w-10 h-10 md:w-14 md:h-14 flex justify-center items-center">
         <Link href="#">
           <span className="sr-only">Twitter</span>
           <svg

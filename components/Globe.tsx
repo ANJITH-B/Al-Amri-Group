@@ -396,7 +396,7 @@ export function Globe() {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center py-20 h-screen bg-black relative w-full sm:min-h-[850px]">
+    <div className="flex flex-col items-center justify-center py-20 h-[90vh] md:h-screen bg-black relative w-full sm:min-h-[850px]">
       <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-[25rem] md:h-[40rem] px-4">
         <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent to-black z-40" />
         <div className="absolute w-full -bottom-20 h-96 sm:h-full z-10">
@@ -433,11 +433,11 @@ export function Globe() {
         We're building something amazing. stay tunned for updates
       </p>
       <Link
-            className="rounded-full border border-solid flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-xs sm:text-sm py-2 px-4 mt-2"
-            href="#"
-            target="_blank"
+        className="rounded-full border border-solid flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-xs sm:text-sm py-2 px-4 mt-2"
+        href="#"
+        target="_blank"
       >
-        Connect now  →
+        Connect now →
       </Link>
     </div>
   );
