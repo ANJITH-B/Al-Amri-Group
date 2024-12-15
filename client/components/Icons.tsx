@@ -7,18 +7,15 @@ export const Icons = {
     <svg
       {...props}
       className={`h-5 w-5 ${props.className || ""}`}
-      xmlns="http://www.w3.org/2000/svg"
-      width="16"
-      height="16"
-      viewBox="0 0 16 16"
+      width="14"
+      height="15"
+      viewBox="0 0 14 15"
       fill="none"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M5.99984 4.00012L10 8.00029L5.99748 12.0028"
-        stroke="currentColor"
-        strokeWidth="1.6"
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        d="M13.7071 8.20711C14.0976 7.81658 14.0976 7.18342 13.7071 6.79289L7.34315 0.428932C6.95262 0.0384079 6.31946 0.0384079 5.92893 0.428932C5.53841 0.819456 5.53841 1.45262 5.92893 1.84315L11.5858 7.5L5.92893 13.1569C5.53841 13.5474 5.53841 14.1805 5.92893 14.5711C6.31946 14.9616 6.95262 14.9616 7.34315 14.5711L13.7071 8.20711ZM13 6.5L0 6.5V8.5L13 8.5V6.5Z"
+        fill="currentColor"
       />
     </svg>
   ),
@@ -26,18 +23,16 @@ export const Icons = {
     <svg
       {...props}
       className={`h-5 w-5 ${props.className || ""}`}
-      xmlns="http://www.w3.org/2000/svg"
-      width="16"
-      height="16"
-      viewBox="0 0 16 16"
+      width="14"
+      height="15"
+      viewBox="0 0 14 15"
       fill="none"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M10.0002 11.9999L6 7.99971L10.0025 3.99719"
-        stroke="currentColor"
-        strokeWidth="1.6"
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        d="M0.292893 6.79289C-0.0976311 7.18342 -0.0976311 7.81658 0.292893 8.20711L6.65685 14.5711C7.04738 14.9616 7.68054 14.9616 8.07107 14.5711C8.46159 14.1805 8.46159 13.5474 8.07107 13.1569L2.41421 7.5L8.07107 1.84315C8.46159 1.45262 8.46159 0.819456 8.07107 0.428932C7.68054 0.0384079 7.04738 0.0384079 6.65685 0.428932L0.292893 6.79289ZM1 8.5L14 8.5V6.5L1 6.5L1 8.5Z"
+        fill="currentColor"
+        fillOpacity="0.7"
       />
     </svg>
   ),

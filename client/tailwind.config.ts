@@ -11,6 +11,15 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary100: "#B3CAD0",
+        primary200: "#A2C0CA",
+        primary300: "#3C2FC0",
+      },
+      fontFamily: {
+        questrial: ['var(--font-questrial)'],
+      },
+      lineHeight: {
+        '12': '3.5rem',
       },
     },
   },
