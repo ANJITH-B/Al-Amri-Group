@@ -21,20 +21,19 @@ body {
 }
 
 .swiper-button-next,
-.swiper-button-prev {
+.swiper-button-prev,
+.swiper-button2-next,
+.swiper-button2-prev,
+.swiper-button3-next,
+.swiper-button3-prev {
   position: relative;
 }
 
 .swiper-button-next::after,
-.swiper-button-prev::after {
-  display: none;
-}
-.swiper-button2-next,
-.swiper-button2-prev {
-  position: relative;
-}
-
+.swiper-button-prev::after,
 .swiper-button2-next::after,
-.swiper-button2-prev::after {
+.swiper-button2-prev::after,
+.swiper-button3-next::after,
+.swiper-button3-prev::after {
   display: none;
 }

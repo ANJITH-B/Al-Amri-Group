@@ -30,11 +30,9 @@ const Carousel: React.FC = () => {
       <p className="text-2xl md:text-4xl max-w-2xl font-normal tracking-wider md:leading-12">
         What Our Clients Say
       </p>
-
-      <TextOpacityOnScroll
-        contain={contain}
-        phrase="At Al Amri Group, we believe our people are our greatest asset. We are committed to fostering a dynamic, inclusive work environment where innovation and collaboration thrive. Join our team of professionals and become a part of a legacy built on quality, integrity, and excellence"
-      />
+      <p className="text-sm md:text-base max-w-2xl py-8 font-normal">
+        At Al Amri Group, we believe our people are our greatest asset. We are committed to fostering a dynamic, inclusive work environment where innovation and collaboration thrive. Join our team of professionals and become a part of a legacy built on quality, integrity, and excellence
+      </p>
       <div className="absolute top-0 md:top-5 right-2 lg:right-20 z-10 flex gap-2">
         <button className="swiper-button3-next bg-white group !p-3 flex justify-center items-center border border-solid !w-12 !h-12 transition-all duration-500 rounded-full border-black border-opacity-20">
           <Icons.leftArrow className="text-black group-hover:text-opacity-50" />
@@ -43,12 +41,12 @@ const Carousel: React.FC = () => {
           <Icons.rightArrow className="text-black group-hover:text-opacity-50" />
         </button>
       </div>
-      <div className="pt-4">
+      <div className="pt-4 lg:pt-8">
         <Swiper
           loop={true}
           spaceBetween={20}
           autoplay={{
-            delay: 1500,
+            delay: 2500,
             disableOnInteraction: false,
           }}
           navigation={{
@@ -56,7 +54,7 @@ const Carousel: React.FC = () => {
             prevEl: ".swiper-button3-prev",
           }}
           breakpoints={{
-            1280: { slidesPerView: 4, spaceBetween: 15 },
+            1280: { slidesPerView: 3, spaceBetween: 10 },
             1026: { slidesPerView: 3, spaceBetween: 10 },
             760: { slidesPerView: 2, spaceBetween: 10 },
             300: { slidesPerView: 1, spaceBetween: 0 },
@@ -67,7 +65,7 @@ const Carousel: React.FC = () => {
           {data.map((item, idx) => {
             return (
               <SwiperSlide key={idx}>
-                <div className="flex flex-col gap-2 bg-gradient-to-br from-white via-primary100 to-white w-full p-4 h-[250px] rounded-3xl">
+                <div className="flex flex-col gap-2 bg-gradient-to-br from-white via-primary100 to-white w-full h-full p-4 rounded-3xl border-2 border-stone-200">
                   <p>{item?.title}</p>
                   <div className="flex items-center gap-2">
                     <Image
@@ -79,7 +77,7 @@ const Carousel: React.FC = () => {
                     />
                     <p>{item?.author}</p>
                   </div>
-                  <p>{item?.description}</p>
+                  <p className="text-xs lg:text-sm">{item?.description}</p>
                 </div>
               </SwiperSlide>
             );

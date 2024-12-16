@@ -6,8 +6,6 @@ const carousalCards: JSX.Element[] = [
       Welcome to Turki Saeed Al Amri Trading Company, your premier destination
       for high-quality lifestyle apparel, catering, construction materials, and
       building tools. Since 2002, we have been a trusted name in wholesale
-      distribution, committed to delivering exceptional experiences to our
-      customers, suppliers, and stakeholders.
     </p>
     <p className="text-xs md:text-sm font-normal text-center text-gray-900">
       At Al Amri, our values of integrity, honesty, and respect form the
@@ -22,8 +20,6 @@ const carousalCards: JSX.Element[] = [
       Welcome to Turki Saeed Al Amri Trading Company, your premier destination
       for high-quality lifestyle apparel, catering, construction materials, and
       building tools. Since 2002, we have been a trusted name in wholesale
-      distribution, committed to delivering exceptional experiences to our
-      customers, suppliers, and stakeholders.
     </p>
     <p className="text-xs md:text-sm font-normal text-center text-gray-900">
       At Al Amri, our values of integrity, honesty, and respect form the

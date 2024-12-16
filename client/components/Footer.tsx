@@ -6,8 +6,8 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-white font-bricolage text-stone-500">
-      <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+    <footer className="bg-white w-full font-bricolage text-stone-500">
+      <div className="mx-auto max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="flex flex-col lg:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0 lg:w-1/4 px-12 max-w-md pb-6">
             <Link href="/" className="flex flex-col items-center">

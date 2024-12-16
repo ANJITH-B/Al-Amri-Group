@@ -14,14 +14,14 @@ const Carousal: React.FC = () => {
   return (
     <div className="relative pl-2 pt-4 md:p-4 lg:px-20">
       <div className="absolute bottom-20 left-20 lg:left-40 z-10 flex gap-2">
-        <button className="swiper-button2-next bg-white group !p-3 flex justify-center items-center border border-solid !w-12 !h-12 transition-all duration-500 rounded-full border-black border-opacity-20">
+        <button className="swiper-button-next bg-white group !p-3 flex justify-center items-center border border-solid !w-12 !h-12 transition-all duration-500 rounded-full border-black border-opacity-20">
           <Icons.leftArrow className="text-black group-hover:text-opacity-50" />
         </button>
-        <button className="swiper-button2-prev bg-white group !p-3 flex justify-center items-center border border-solid !w-12 !h-12 transition-all duration-500 rounded-full border-black border-opacity-20">
+        <button className="swiper-button-prev bg-white group !p-3 flex justify-center items-center border border-solid !w-12 !h-12 transition-all duration-500 rounded-full border-black border-opacity-20">
           <Icons.rightArrow className="text-black group-hover:text-opacity-50" />
         </button>
       </div>
-      <div className="">
+      <div>
         <Swiper
           loop={true}
           spaceBetween={20}
@@ -35,7 +35,7 @@ const Carousal: React.FC = () => {
             prevEl: ".swiper-button-prev",
           }}
           breakpoints={{
-            1280: { slidesPerView: 5, spaceBetween: 15 },
+            1280: { slidesPerView: 5, spaceBetween: 10 },
             1026: { slidesPerView: 4, spaceBetween: 10 },
             760: { slidesPerView: 3, spaceBetween: 10 },
             300: { slidesPerView: 1.5, spaceBetween: 8 },

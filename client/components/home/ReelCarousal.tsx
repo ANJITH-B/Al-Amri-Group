@@ -44,8 +44,8 @@ const ReelCarousal: React.FC = () => {
             disableOnInteraction: false,
           }}
           navigation={{
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: ".swiper-button2-next",
+            prevEl: ".swiper-button2-prev",
           }}
           breakpoints={{
             1280: { slidesPerView: 5, spaceBetween: 15 },

@@ -23,7 +23,7 @@ const page: React.FC = () => {
     };
   }, []);
   return (
-    <main className="">
+    <main className="w-screen xl:max-w-screen-xl">
       <HeroSection />
       <Service />
       <Reels />

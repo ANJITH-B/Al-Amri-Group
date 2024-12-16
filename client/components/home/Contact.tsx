@@ -5,11 +5,11 @@ import stepperData from "@/data/stepperData";
 
 const Contact: React.FC = () => {
   return (
-    <div className="p-8 min-h-screen">
-      <h1 className="text-2xl md:text-5xl max-w-2xl">
+    <div className="p-8">
+      <h1 className="text-2xl md:text-4xl max-w-2xl font-normal tracking-wider md:leading-12">
         Connecting You to Excellence Through Our Expertise
       </h1>
-      <div className="flex flex-col md:flex-row min-h-[50vh]">
+      <div className="flex flex-col md:flex-row min-h-[40vh] lg:min-h-[30vh] xl:min-h-[40vh]">
         <div className="flex h-full md:w-1/2">
           <Image
             src="/assets/logo-dark.png"
@@ -37,7 +37,7 @@ const Contact: React.FC = () => {
         </div>
       </div>
 
-      <ol className="relative text-gray-500 flex flex-col md:flex-row md:gap-8">
+      <ol className="relative text-gray-500 flex flex-col md:flex-row md:gap-8 pb-16">
         {stepperData.map((step, index) => (
           <li key={index} className={`mt-8 ms-6 md:m-0 md:flex-1`}>
             <span
