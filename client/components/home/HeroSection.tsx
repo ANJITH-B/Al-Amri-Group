@@ -5,7 +5,7 @@ import Carousal from "./Carousal";
 const HeroSection: React.FC = () => {
   return (
     <>
-      <div className="flex flex-col items-center text-gray-800 gap-4 mt-28 lg:mt-36 px-8 h-[35vh]">
+      <div className="flex flex-col items-center text-gray-800 gap-4 mt-28 lg:mt-36 px-8 h-[35vh] md:h-[30vh]">
         <p className="text-[30px] md:text-5xl max-w-xl font-normal text-center tracking-wider md:leading-12">
           Your Trusted Wholesale Partner Since 2002
         </p>

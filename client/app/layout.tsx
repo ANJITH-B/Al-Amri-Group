@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${questrial.variable} antialiased font-questrial flex flex-col items-center w-screen overflow-hidden`}>
+      <body className={`${questrial.variable} antialiased font-questrial flex flex-col items-center w-screen overflow-x-hidden`}>
         <Header />
         {children}
         <Footer />

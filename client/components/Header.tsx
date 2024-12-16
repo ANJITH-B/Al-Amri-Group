@@ -44,7 +44,7 @@ const Header: React.FC = () => {
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
 
   return (
-    <motion.div initial={{ y: -200 }} animate={{ y: 0 }} transition={{ delay: 0.9, duration: 0.8 }} className="fixed top-4 z-50 w-full">
+    <motion.div initial={{ y: -200 }} animate={{ y: 0 }} transition={{ delay: 0.3, duration: 0.8 }} className="fixed top-4 z-50 w-full">
       <div className="container px-0 py-0 md:py-0 md:p-0 mx-auto gap-2 md:gap-8 rounded-full border-b-2 border-2 border-primary100 backdrop-blur-3xl bg-white bg-opacity-45 flex justify-between items-center w-fit max-w-screen-md">
         <nav className="flex text-base text-stone-500">
           {navLinks.slice(0, 5).map(({ path, label }) => (
