@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import Landing from "./Components/landing";
 import Lenis from "lenis";
 import StickySection from "./Components/StickySetion";
+import { UnderConstruction } from "@/components/UnderConstruction";
 
 export default function Page() {
     useEffect(() => {
@@ -23,8 +24,8 @@ export default function Page() {
     return (
         <main>
             {/* <div className="h-[100vh]"></div> */}
-            <Landing />
-            
+            {/* <Landing /> */}
+            <UnderConstruction/>
         </main>
     );
 }

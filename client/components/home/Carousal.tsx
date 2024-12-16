@@ -5,22 +5,25 @@ import "swiper/css/navigation";
 import carousalCards from "./CarousalCards";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Icons } from "../Icons";
+import {motion} from "framer-motion";
+import { useMediaQuery } from "react-responsive";
 
 const Carousal: React.FC = () => {
+  const sm = useMediaQuery({ query: '(max-width: 600px)' });
   const data = carousalCards;
   const [activeIndex, setActiveIndex] = useState(0);
   const top = [0, 120, 60, 60, 60];
 
   return (
-    <div className="relative pl-2 pt-4 md:p-4 lg:px-20">
-      <div className="absolute bottom-20 left-20 lg:left-40 z-10 flex gap-2">
+    <motion.div initial={{opacity:0, scale: 0.89 , y:200, x:100}} whileInView={{opacity:1, scale:1, y:0 , x:0}} className="relative pl-2 pt-4 md:p-4 lg:px-20">
+      <motion.div initial={{scale: sm ? 0.68: 0.85, y:10}} className="absolute bottom-20 left-14 md:left-20 lg:left-40 z-10 flex gap-2">
         <button className="swiper-button-next bg-white group !p-3 flex justify-center items-center border border-solid !w-12 !h-12 transition-all duration-500 rounded-full border-black border-opacity-20">
           <Icons.leftArrow className="text-black group-hover:text-opacity-50" />
         </button>
         <button className="swiper-button-prev bg-white group !p-3 flex justify-center items-center border border-solid !w-12 !h-12 transition-all duration-500 rounded-full border-black border-opacity-20">
           <Icons.rightArrow className="text-black group-hover:text-opacity-50" />
         </button>
-      </div>
+      </motion.div>
       <div>
         <Swiper
           loop={true}
@@ -38,7 +41,7 @@ const Carousal: React.FC = () => {
             1280: { slidesPerView: 5, spaceBetween: 10 },
             1026: { slidesPerView: 4, spaceBetween: 10 },
             760: { slidesPerView: 3, spaceBetween: 10 },
-            300: { slidesPerView: 1.5, spaceBetween: 8 },
+            300: { slidesPerView: 3, spaceBetween: 2 },
           }}
           autoHeight={true}
           modules={[Navigation, Autoplay]}
@@ -65,7 +68,7 @@ const Carousal: React.FC = () => {
           })}
         </Swiper>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

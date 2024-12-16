@@ -5,7 +5,7 @@ import stepperData from "@/data/stepperData";
 
 const Contact: React.FC = () => {
   return (
-    <div className="p-8">
+    <div id="contact" className="p-8">
       <h1 className="text-2xl md:text-4xl max-w-2xl font-normal tracking-wider md:leading-12">
         Connecting You to Excellence Through Our Expertise
       </h1>

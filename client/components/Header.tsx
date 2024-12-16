@@ -4,6 +4,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { usePathname } from "next/navigation";
 import { Icons } from "./Icons";
+import { motion } from "framer-motion";
 
 interface CustomLinkProps {
   path: string;
@@ -23,13 +24,12 @@ const CustomLink: React.FC<CustomLinkProps> = ({ path, children, dark }) => {
   const pathname = usePathname();
   return (
     <Link
-      className={`p-2 px-6 m-1
-      ${
-        pathname === path &&
+      className={`p-1.5 md:p-2 px-3 md:px-6 m-1 text-xs md:text-sm
+      ${pathname === path &&
         (dark
           ? "text-black bg-primary100 rounded-full w-full h-full backdrop-blur-lg bg-opacity-30 border-2 border-stone-300"
           : "text-stone-300")
-      }
+        }
       ${dark ? "hover:text-black" : "hover:text-stone-300"}
       `}
       href={path}
@@ -44,16 +44,16 @@ const Header: React.FC = () => {
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
 
   return (
-    <header className="fixed top-4 z-50 w-full">
-      <div className="container px-6 py-3 md:p-0 mx-auto gap-8 rounded-full border-b-2 md:border-2 border-primary100 backdrop-blur-3xl bg-white bg-opacity-45 flex justify-between items-center w-fit max-w-screen-md">
-        <nav className="hidden md:flex text-base text-stone-500">
+    <motion.div initial={{ y: -200 }} animate={{ y: 0 }} transition={{ delay: 0.9, duration: 0.8 }} className="fixed top-4 z-50 w-full">
+      <div className="container px-0 py-0 md:py-0 md:p-0 mx-auto gap-2 md:gap-8 rounded-full border-b-2 border-2 border-primary100 backdrop-blur-3xl bg-white bg-opacity-45 flex justify-between items-center w-fit max-w-screen-md">
+        <nav className="flex text-base text-stone-500">
           {navLinks.slice(0, 5).map(({ path, label }) => (
             <CustomLink key={path} path={path} dark>
               {label}
             </CustomLink>
           ))}
         </nav>
-        <div className="flex md:hidden items-center">
+        {/* <div className="flex md:hidden items-center">
           <Image
             src="/assets/logo.png"
             alt="logo"
@@ -75,11 +75,11 @@ const Header: React.FC = () => {
             className="w-10 h-8 cursor-pointer"
             onClick={toggleMenu}
           />
-        </div>
+        </div> */}
       </div>
 
       {isMenuOpen && (
-        <div className="fixed bg-gradient-to-r from-[#0C3E54] to-[#1B89BA] text-white top-0 right-0 w-64 xs:w-72 sm:w-80 md:w-96 lg:w-104 backdrop-blur-lg overflow-hidden rounded-l-2xl p-2 shadow-md">
+        <div className="fixed bg-gradient-to-r from-[#0C3E54] to-[#1B89BA] text-white top-0 right-0 w-64 sm:w-80 md:w-96 lg:w-104 backdrop-blur-lg overflow-hidden rounded-l-2xl p-2 shadow-md">
           <div className="flex justify-between p-8">
             <h2 className="text-sm font-semibold">Quick Links</h2>
             <button onClick={toggleMenu} aria-label="Close Menu">
@@ -102,7 +102,7 @@ const Header: React.FC = () => {
           </p>
         </div>
       )}
-    </header>
+    </motion.div>
   );
 };
 

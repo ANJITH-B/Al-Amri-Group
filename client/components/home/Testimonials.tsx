@@ -65,7 +65,7 @@ const Carousel: React.FC = () => {
           {data.map((item, idx) => {
             return (
               <SwiperSlide key={idx}>
-                <div className="flex flex-col gap-2 bg-gradient-to-br from-white via-primary100 to-white w-full h-full p-4 rounded-3xl border-2 border-stone-200">
+                <div className="flex flex-col gap-2 bg-white w-full h-full p-4 rounded-3xl border-2 border-stone-200">
                   <p>{item?.title}</p>
                   <div className="flex items-center gap-2">
                     <Image

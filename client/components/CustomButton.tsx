@@ -21,13 +21,18 @@ const CustomButton: React.FC<CustomButtonProps> = ({
       onClick(e);
     } else if (href) {
       router.push(href);
+    } else {
+      const contactSection = document.getElementById('contact');
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   };
 
   return (
     <button
       onClick={handleClick}
-      className="flex w-fit h-fit items-center rounded-full border border-gray-300 p-1"
+      className="flex w-fit h-fit z-10 bg-white items-center rounded-full border border-gray-300 p-1"
     >
       <p className="px-4 text-xs md:text-sm">{children}</p>
       <span className="rounded-full w-8 lg:w-10 h-8 lg:h-10 flex items-center justify-center text-xs xl:text-2xl font-bold bg-black">
