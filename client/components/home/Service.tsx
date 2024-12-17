@@ -6,6 +6,7 @@ import Image from "next/image";
 import CustomButton from "../CustomButton";
 import { CardSpotlight } from "../ui/card-spotlight";
 import { cn } from "@/utils/cn";
+import { SentenceAnimation } from "../AnimationText";
 
 const spring = {
   type: "easeInOut",
@@ -38,9 +39,7 @@ const Service: React.FC = () => {
     <div className="min-h-screen justify-center flex flex-col gap-8  ">
       <div className="px-5 lg:px-20 xl:px-[20px] w-full max-w-screen-xl">
         <div className="flex flex-col items-center text-gray-800 gap-4 mt-8 px-8">
-          <p className="text-2xl md:text-5xl max-w-2xl font-normal text-center tracking-wider md:leading-12">
-            We address Solutions for Your Business Growth
-          </p>
+          <SentenceAnimation className="text-2xl md:text-5xl max-w-2xl font-normal text-center tracking-wider leading-5 md:leading-10" sentences={["We address Solutions for"," Your Business Growth"]}/>
           <p className="text-sm md:text-base max-w-md font-normal text-center">
             Providing High-Quality Products and Services Across Apparel, Catering,
             and Construction Industries
