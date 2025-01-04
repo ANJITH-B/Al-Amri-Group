@@ -3,6 +3,7 @@ import { Questrial } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Loading from "../components/ui/loading";
 
 const questrial = Questrial({
   subsets: ["latin"],
@@ -25,7 +26,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${questrial.variable} antialiased font-questrial flex flex-col items-center w-screen overflow-x-hidden`}>
         <Header />
-        {children}
+        <Loading>
+          {children}
+        </Loading>
         <Footer />
       </body>
     </html>
