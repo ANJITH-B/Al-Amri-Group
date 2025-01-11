@@ -33,6 +33,10 @@ export default {
       animation: {
         aurora: "aurora 60s linear infinite",
       },
+      blur: {
+        xs: '1.2px',
+        xm: '1.5px', 
+      },
       keyframes: {
         aurora: {
           from: {

@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Loading from "../components/ui/loading";
+import { Suspense } from "react";
 
 const questrial = Questrial({
   subsets: ["latin"],
@@ -25,11 +26,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${questrial.variable} antialiased font-questrial flex flex-col items-center w-screen overflow-x-hidden`}>
+       <Suspense>
         <Header />
         <Loading>
           {children}
         </Loading>
         <Footer />
+       </Suspense>
       </body>
     </html>
   );
