@@ -1,8 +1,13 @@
-import { UnderConstruction } from '@/components/UnderConstruction'
-import React from 'react'
+"use client"
+import ContactPage from "@/components/contact/ContactPage";
+import React from "react";
 
 const page = () => {
-    return <UnderConstruction />
-}
+  return (
+    <main className="w-screen xl:max-w-screen-xl overflow-hidden">
+      <ContactPage />
+    </main>
+  );
+};
 
-export default page
+export default page;
