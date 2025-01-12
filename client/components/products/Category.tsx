@@ -13,7 +13,7 @@ const Category: React.FC = () => {
     },
     {
       src: "/category/equipments.jpg",
-      href: "/search?q=hardware-tools",
+      href: "/search?q=hardware",
       viewBox: "0 0 49 43",
       width: "49",
       height: "43",
