@@ -7,8 +7,8 @@ import blogData from "@/data/blogData";
 const HeroSection: React.FC = () => {
   const data = blogData[0];
   return (
-    <div className="flex flex-col gap-16">
-      <div className="flex flex-col justify-end xl:flex-row items-end min-h-screen pt-20">
+    <div className="flex flex-col gap-16 w-full">
+      <div className="relative flex flex-col justify-end xl:flex-row items-end min-h-screen pt-20 w-full">
         <Image
           className="object-cover"
           src={`/assets/${data?.image}`}
@@ -37,7 +37,7 @@ const HeroSection: React.FC = () => {
             {data?.title}
           </h1>
           <p className="max-w-2xl text-base md:text-lg text-center">
-            {data?.description}
+            {data?.description?.substring(0, 500)}...
           </p>
         </div>
         <div className="flex items-end w-full justify-center ">

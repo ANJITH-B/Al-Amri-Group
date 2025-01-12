@@ -1,11 +1,10 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import blogData from "@/data/blogData";
 import { Icons } from "@/components/Icons";
-
 
 interface Props {
   params: {
@@ -25,7 +24,7 @@ const Blog: React.FC<Props> = ({ params }) => {
   };
 
   return (
-    <section className="pt-[70px] md:pt-[120px] pb-[50px] md:pb-[100px] bg-[#FEFDFD] flex items-center justify-center font-bricolage">
+    <section className="pt-[70px] md:pt-[120px] pb-[50px] md:pb-[100px] flex items-center justify-center font-bricolage">
       <div className="container p-6 md:p-10 w-full">
         <div className="flex gap-1 pb-2">
           <button onClick={() => router.back()}>← Back</button>

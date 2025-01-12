@@ -3,7 +3,6 @@ import NewsLetter from "@/components/blogs/NewsLetter";
 import BlogListings from "@/components/blogs/BlogListing";
 import { Metadata } from "next";
 import React from "react";
-import { UnderConstruction } from "@/components/UnderConstruction";
 
 export const metadata: Metadata = {
   title: "Blogs | Al Amri Group",
@@ -12,11 +11,12 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <main>
-      {/* <HeroSection />
-      <BlogListings />
-      <NewsLetter /> */}
-      <UnderConstruction/>
+    <main className="w-screen h-full flex flex-col items-center">
+      <HeroSection />
+      <div className="px-2 md:px-10 lg:px-10 xl:px-[20px] w-full max-w-screen-xl">
+        <BlogListings />
+        <NewsLetter />
+      </div>
     </main>
   );
 };
